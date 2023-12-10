@@ -1,0 +1,58 @@
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 1 through 8 {
+  .fw-#{$i}00 {
+    font-weight: #{$i}00;
+  }
+}
+
+@media (width > 576px) {
+  @for $i from 1 through 30 {
+    .fs-sm-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  @for $i from 1 through 8 {
+    .fw-sm-#{$i}00 {
+      font-weight: #{$i}00;
+    }
+  }
+}
+
+@media (width > 768px) {
+  @for $i from 1 through 30 {
+    .fs-md-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  @for $i from 1 through 8 {
+    .fw-md-#{$i}00 {
+      font-weight: #{$i}00;
+    }
+  }
+}
+
+@media (width > 991px) {
+  @for $i from 1 through 30 {
+    .fs-lg-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  @for $i from 1 through 8 {
+    .fw-lg-#{$i}00 {
+      font-weight: #{$i}00;
+    }
+  }
+}
+
+@media (width > 1200px) {
+  @for $i from 1 through 30 {
+    .fs-xl-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.text-green {
+  color: #00b865 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.inverted-image {
+  filter: invert(100%) !important;
+}
+
+@keyframes infinite-scroll-animation {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgb(33, 150, 243);
+  }
+
+  to {
+    box-shadow: 0 0 0 30px transparent;
+  }
+}
+
+.bomb-radius {
+  animation: pulse-animation 2s infinite linear;
+}
+.infinite-scroll {
+  animation: infinite-scroll-animation 27s infinite linear;
+}
+
+@media (width < 768px) {
+  .infinite-scroll {
+    animation: infinite-scroll-animation 30s infinite linear;
+  }
+}

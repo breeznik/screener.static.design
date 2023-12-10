@@ -1,0 +1,488 @@
+.autoSlider_wrapper {
+  box-sizing: border-box;
+  .stockRow {
+    transform: translateX(101vw);
+    max-width: inherit;
+    margin-right: 0;
+    width: fit-content;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0 !important;
+      display: none !important;
+    }
+
+    .stockCol {
+      max-width: fit-content !important;
+
+      .contentWrapper {
+        .stockIcon {
+          img {
+            width: auto;
+            height: 20px;
+          }
+        }
+
+        .stockPrice {
+          color: #a9a9a9;
+        }
+        .stockChange {
+          img {
+            width: 9px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+.stockCardsWrapper {
+  height: fit-content;
+  ::-webkit-scrollbar {
+    visibility: hidden;
+    height: 0;
+  }
+  .stockCardsRow {
+    scroll-behavior: smooth;
+    .stockCardCol {
+      img {
+        width: auto;
+        height: 20px;
+        box-sizing: content-box;
+        right: 5px;
+      }
+      .stockCard {
+        overflow: hidden;
+        box-shadow: 0.2px 0.2px 4px 0.5px rgba(0, 0, 0, 0.07) !important;
+        .cardTop {
+          .price {
+            color: #bcbaba;
+          }
+          .stockChangedState {
+            img {
+              width: 10px;
+              object-fit: contain;
+              height: fit-content;
+            }
+          }
+        }
+        .cardMid {
+          .stockPrice {
+            img {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+        .cardBottom {
+          span {
+            height: fit-content;
+            a {
+              text-decoration: none !important;
+            }
+            &::after {
+              content: '|';
+            }
+            &:last-child {
+              &::after {
+                content: '';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sliderArrow {
+    height: 20px;
+    width: auto;
+    &:last-child {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.chartContainer {
+  .containerTop {
+    .heading {
+      padding: 0 12px;
+    }
+    .chooseStocks {
+      padding: 0 12px;
+    }
+  }
+  .containerBody {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.brokers {
+  .borkersRow {
+    &:last-child {
+      padding-right: 12px;
+    }
+    .borkerCol {
+      max-width: fit-content;
+      .broker {
+        width: fit-content;
+        // border: 0.5px solid grey;
+        .borkerIcon {
+          width: 25px;
+          height: 25px;
+          box-sizing: content-box;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.giftNifty_wrapper {
+  .giftNifty {
+    background-color: #fbfbfb;
+    max-height: 180px;
+    .price {
+      color: rgba(128, 128, 128, 0.795);
+    }
+    .priceChange {
+      img {
+        width: 12px;
+      }
+    }
+    .highmin {
+      .low {
+        .price {
+          color: red;
+        }
+      }
+    }
+
+    .cardBottom {
+      &:last-child {
+        color: #3ba7f4 !important;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 13px;
+        height: 13px;
+      }
+    }
+    .refreshIcon {
+      width: 17px;
+      height: 17px;
+      right: 10px;
+      top: 10px;
+    }
+  }
+  .greetings {
+    .head {
+      span.username {
+        color: #09c9f3;
+      }
+    }
+
+    p.greeting {
+      color: #818992 !important;
+    }
+
+    .buttons {
+      button.connectBroker {
+        background: linear-gradient(180deg, #4399eb, #5cadfb);
+        color: white !important;
+      }
+      button.goToProfile {
+        border: 1px solid #4399eb;
+        color: #4399eb;
+      }
+    }
+  }
+}
+
+.ResultCalender_wrapper {
+  .calenderTop {
+    // padding: 0 16px;
+    .rowNumbers {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .table {
+    .tableHeadings {
+      // padding: 0 24px;
+
+      span {
+        flex: 1;
+        font-weight: 600;
+      }
+    }
+    .tbody {
+      .tableRow {
+        // padding: 0 24px !important;
+        border-bottom: 1px solid #dadada;
+        padding: 8px 0px;
+        &:last-child {
+          border-bottom: 0px;
+        }
+        span {
+          color: #979797;
+          flex: 1;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.blog_wrapper {
+  .blog_card {
+    background-color: #f7f6f7;
+    box-shadow: 0.2px 0.2px 4px 0.5px rgba(0, 0, 0, 0.1) !important;
+
+    .cardhead {
+      width: inherit;
+      img {
+        width: inherit;
+        height: 160px;
+        object-fit: cover;
+      }
+    }
+    .cardBody {
+      height: 160px;
+      a {
+        text-decoration: none;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+        white-space: pre-wrap;
+      }
+      .readMore {
+        color: #00a9ce;
+      }
+    }
+  }
+}
+
+.screeners_wrapper {
+
+  .screener_row {
+    .screener_col {
+      .content {
+        .screenerImage {
+          height: fit-content;
+          border-radius: 50%;
+          img {
+            width: 35px;
+            height: 35px;
+          }
+        }
+        .body {
+        }
+      }
+    }
+  }
+}
+.download_wrapper {
+  .downloadMobileApp {
+    background-color: #f4f7fc;
+    
+    .mid {
+      .links {
+        .downloadLinks {
+          .imageWrapper {
+            &:first-child {
+              max-width: 194px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              max-width: 205px;
+              max-height: 70px;
+              object-fit: contain;
+            }
+          }
+        }
+        .scanner {
+          img {
+            width: 80%;
+            height: auto;
+          }
+        }
+      }
+      .downloadState {
+        img {
+          height: 24px;
+          width: auto;
+        }
+        color: #f47721;
+      }
+    }
+    .bottom {
+      img {
+        width: 100%;
+        max-width: 468px;
+        max-height: 517px;
+      }
+      div {
+        img {
+          width: 50px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.rightBroker_wrapper {
+}
+
+.stockBottomOptions {
+  // background: rgba(182, 175, 175, 0.7);
+  // backdrop-filter: blur(2px);
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out !important;
+  .closebtn {
+    right: 10px;
+    top: 7px;
+    width: 25px;
+    z-index: 5;
+  }
+  .top {
+    .row {
+      span {
+        flex: 1;
+      }
+      img {
+        width: 10px;
+      }
+      .stockname {
+        .price {
+        }
+      }
+    }
+    // .highmin {
+    //   width: 30%;
+    //   background-color: white;
+    //   // backdrop-filter: blur(2px);
+    //   left: 0;
+    // }
+  }
+  .bottom {
+    a {
+      text-decoration: none;
+      border-bottom: 1px dotted black;
+      color: black;
+      &:last-child {
+        border: 0;
+      }
+      &:active {
+        background-color: lightgray;
+      }
+    }
+  }
+}
+
+@media (width < 992px) {
+  .stockCardsWrapper {
+    .stockCardsRow {
+      .stockCardCol {
+        max-width: 220px;
+        min-width: 170px;
+
+        .stockCard {
+          position: relative;
+          .active_body {
+            transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+            transform: translateX(-100%);
+            animation: fadeAway linear;
+          }
+
+          .cardBottom {
+            position: absolute;
+            top: -115%;
+            right: 0;
+            border-top: 0 !important;
+            border-bottom: 1px;
+            text-align: center;
+            // height: inherit;
+            span:last-child {
+              border-bottom: none;
+            }
+            span {
+              border-bottom: 0.5px solid rgba(128, 128, 128, 0.349);
+            }
+          }
+
+          .active_bottom {
+            transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+            top: 0% !important;
+            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(2px);
+            text-align: start;
+
+            span {
+              width: 100%;
+              &::after {
+                content: '';
+              }
+              a {
+                color: white;
+              }
+              padding: 8px 0px 8px 0px;
+              &:active {
+                background-color: darkgrey;
+              }
+            }
+          }
+          img {
+            transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .stockCardsWrapper {
+    .stockCardsRow {
+      // .stockCardCol {
+      //   max-width: 171px;
+      //   min-width: 170px;
+      // }
+    }
+  }
+  .giftNifty_wrapper {
+    .giftNifty {
+      max-width: 160px;
+      min-width: 160px;
+    }
+  }
+  .blog_wrapper {
+    .col {
+      width: fit-content;
+      .blog_card {
+        // width: 160px;
+        width: 195px;
+        .cardBody {
+          height: fit-content;
+        }
+      }
+    }
+  }
+}
+
+@media (width: 347px) {
+  .giftNifty_wrapper {
+    flex-wrap: wrap;
+  }
+}

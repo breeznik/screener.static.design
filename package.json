@@ -1,0 +1,28 @@
+{
+  "name": "nifty.trader",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "13.5.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.1",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.67.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
